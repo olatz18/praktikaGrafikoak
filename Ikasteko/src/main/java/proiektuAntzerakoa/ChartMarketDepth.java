@@ -64,7 +64,7 @@ public class ChartMarketDepth extends JFrame {
         	bolumenaE = bolumenaE + erosiTarteak.get(key);
         	xyseries.add(key , bolumenaE);
 //        	System.out.println("prezio horretan kop: " + erosiTarteak.get(key)+" 		bolumena: "+ bolumenaE);
-        	System.out.println("erosteko prezioa: " + key+"		bolumena: "+ bolumenaE);
+//        	System.out.println("erosteko prezioa: " + key+"		bolumena: "+ bolumenaE);
 
         }
 
@@ -90,7 +90,7 @@ public class ChartMarketDepth extends JFrame {
        xYSeriesCollection.addSeries(xyseries1);
 
         // chart
-        JFreeChart jfreechart = ChartFactory.createXYLineChart("", "Prezioa(�)", "Kantitatea", xYSeriesCollection, PlotOrientation.VERTICAL, true, false, false);
+        JFreeChart jfreechart = ChartFactory.createXYLineChart("", "Prezioa(€)", "Kantitatea", xYSeriesCollection, PlotOrientation.VERTICAL, true, false, false);
      //   jfreechart.setBackgroundPaint(new Color(0xFF, 0xFF, 0xFF, 0));
         
 

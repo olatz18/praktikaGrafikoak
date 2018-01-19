@@ -150,13 +150,13 @@ public HashMap <Double, Double> tarteakAteraErosi( HashMap<Double,Double> hm, Do
 	List<Double> keys = new LinkedList<Double>(hm.keySet());
 	int i = 0;
 	Double tarteaGoitik= handiena;
-	System.out.println("tartea goitik: "+tarteaGoitik);
+//	System.out.println("tartea goitik: "+tarteaGoitik);
 	while(i<=9){
 //		System.out.println("whilean sartu da 	i: "+i);
 		
 	Double tarteaBehetik = tarteaGoitik - 100;
-	System.out.println("tartea behetik: "+tarteaBehetik);
-	System.out.println("tartea goitik: " + tarteaGoitik);
+//	System.out.println("tartea behetik: "+tarteaBehetik);
+//	System.out.println("tartea goitik: " + tarteaGoitik);
 	DBKudeatzaileSQLite dbkud = DBKudeatzaileSQLite.getInstantzia();
 	String aux = "SELECT SUM( JSON_EXTRACT(message, '$.remaining_size')) suma FROM transactions WHERE JSON_EXTRACT(message, '$.side') = 'buy' AND JSON_EXTRACT(message, '$.product_id') = 'BTC-EUR' AND JSON_EXTRACT(message, '$.type') = 'open' AND JSON_EXTRACT(message, '$.price') < '"+ tarteaGoitik+"' AND JSON_EXTRACT(message, '$.price') > '"+tarteaBehetik+"';";
 	aux = aux.replace('\\',',');

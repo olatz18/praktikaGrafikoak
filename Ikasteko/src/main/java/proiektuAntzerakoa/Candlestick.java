@@ -86,7 +86,7 @@ public class Candlestick extends JPanel {
 					Date v_date=null;
 					try {
 						v_date = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy", Locale.ENGLISH).parse(fetxa);
-						System.out.println("v_date: "+v_date);
+//						System.out.println("v_date: "+v_date);
 						} catch (ParseException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -97,9 +97,9 @@ public class Candlestick extends JPanel {
 						    Date date_temp=null;
 						    try {
 						    	 String katea = formatter.format(v_date);
-								 System.out.println("katea: "+katea);
+//								 System.out.println("katea: "+katea);
 						        date_temp = (Date) formatter.parse(katea); // String of same format a formatter
-						        System.out.println("date_temp: "+date_temp);
+//						        System.out.println("date_temp: "+date_temp);
 						    } catch (ParseException ex) {
 						        //Logger.getLogger(Attendance_Calculation.class.getName()).log(Level.SEVERE, null, ex);
 						        ex.printStackTrace();
