@@ -28,6 +28,7 @@ public class CandleStickDemo2 extends JFrame {
         XYDataset   dataset          = getDataSet(stockSymbol);
 
         XYPlot mainPlot = new XYPlot(dataset, domainAxis, rangeAxis, renderer);
+       
 
         //Do some setting up, see the API Doc
         renderer.setSeriesPaint(0, Color.BLACK);

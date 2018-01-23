@@ -59,7 +59,7 @@ public class ChartMarketDepth extends JFrame {
         List<Double> erostekoKeys = new LinkedList<Double>(erosiTarteakOr.keySet());
         Collections.reverse(erostekoKeys);
 //        System.out.println("erosi --> xyseries: ");
-        Double bolumenaE =0.0;
+        Double bolumenaE = 0.0;
         for(Double key : erostekoKeys){
         	bolumenaE = bolumenaE + erosiTarteak.get(key);
         	xyseries.add(key , bolumenaE);
@@ -76,7 +76,7 @@ public class ChartMarketDepth extends JFrame {
       Double bolumenaS = 0.0;
       for(Double key : saltzekoKeys){
     	  bolumenaS = salduTarteak.get(key)+ bolumenaS;
-      	xyseries1.add(key, bolumenaS);
+      	  xyseries1.add(key, bolumenaS);
       	
 //      	System.out.println("xyseries1.add( " + key + ", "+ salduTarteak.get(key)+")");
     	

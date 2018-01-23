@@ -11,9 +11,10 @@ public class DBKudeatzaileSQLite {
 	private void conOpen() {
 		try {
 
-			String path=this.getClass().getResource("imuProiektua.db").getPath();
-			System.out.println("Path:"+ path);
-			String url = "jdbc:sqlite:"+ path;
+//			String path=this.getClass().getResource("imuProiektua.db").getPath();
+//			System.out.println("Path:"+ path);
+//			String url = "jdbc:sqlite:"+ path;
+			String url = "jdbc:sqlite:imuProiektua.db";
 			Class.forName("org.sqlite.JDBC").newInstance();
 			
 			conn = (Connection) DriverManager.getConnection(url);
